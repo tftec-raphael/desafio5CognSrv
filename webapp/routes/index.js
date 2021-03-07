@@ -11,7 +11,7 @@ const client = new documentClient(process.env.DB_ENDPOINT, {
 router.get('/', function(req, res, next) {
   // Check database & collection settings
   if(!process.env.DB_NAME) {
-    process.env.DB_NAME = "dedesafio";
+    process.env.DB_NAME = "dbdesafio";
   }
   if(!process.env.DB_COLLECTION) {
     process.env.DB_COLLECTION = "twitter";
